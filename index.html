@@ -79,7 +79,7 @@
       <div class="container is-size-5">
         <div class="navbar-menu">
           <div class="navbar-end">
-            <a class="navbar-item pl-4 pr-4" href="https://lecar-lab.github.io/falcon-humanoid/">  <!-- TODO:update -->
+            <a class="navbar-item pl-4 pr-4" href="./static/falcon.pdf">  <!-- TODO:update -->
               <span class="icon" style="margin-right:5px;">
                 <img src="./static/images/pdf.svg" alt="PDF" />
               </span>
@@ -131,7 +131,7 @@
         <div class="publication-links">
           <!-- PDF Link. -->
           <span class="link-block">
-            <a href="https://lecar-lab.github.io/falcon-humanoid/" class="external-link button is-normal is-rounded is-dark">
+            <a href="./static/falcon.pdf" class="external-link button is-normal is-rounded is-dark">
               <span class="icon">
                 <img src="./static/images/pdf.svg" alt="PDF" />
               </span>
@@ -240,7 +240,7 @@
               <!-- PDF Link. -->
               <span class="link-block">
                 <!-- TODO:update -->
-                <a href="https://lecar-lab.github.io/falcon-humanoid/"
+                <a href="./static/falcon.pdf"
                    class="external-link button is-normal is-rounded is-dark" target="_blank">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -307,29 +307,109 @@
   </div>
 </section>
 
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">
+          Heavy-Duty Loco-Manipulation Tasks
+        </h2>
+        <p class="content is-medium" style="text-align: center; padding-bottom: 20px;">
+          We <strong style="color: #e63946; font-weight: 800;">compare</strong> the real-world performance of <span class="method" style="color: darkred;">FALCON</span> with a baseline method that uses RL for low-body locomotion and IK for upper-body manipulation w/o any force curriculum, on the following three tasks: <b>Door-Opening</b>, <b>Cart-Pulling</b>, and <b>Heavy-Lifting</b>.
+        </p>        
+        <tr>
+          <td>
+
+            <div class="columns">
+              <div class="column">
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Door-Opening (Baseline)</h3>
+                <video autoplay muted loop playsinline controls preload="auto" src="./static/videos/g1_door_opening_baseline_h264.mp4" width="100%" style="border-radius:10px; border: 5px solid rgb(255, 114, 112);"></video>
+              </div>
+              <div class="column">
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Door-Opening (FALCON)</h3>
+                <video autoplay muted loop playsinline controls preload="auto" src="./static/videos/g1_door_open_falcon_h264.mp4" width="100%" style="border-radius:10px; border: 5px solid rgb(134, 236, 137);"></video>
+              </div>
+            </div>
+            <br>
+
+
+            <div class="columns"> 
+              <div class="column">
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Cart-Pulling (Baseline)</h3>
+                <video autoplay muted loop playsinline controls preload="auto" src="./static/videos/t1_cart_pulling_baseline_mask_h264.mp4" width="100%" style="border-radius:10px; border: 5px solid rgb(255, 114, 112);"></video>
+              </div>
+              <div class="column">
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Cart-Pulling (FALCON)</h3>
+                <video autoplay muted loop playsinline controls preload="auto" src="./static/videos/t1_cart_pulling_falcon_mask_h264.mp4" width="100%" style="border-radius:10px; border: 5px solid rgb(134, 236, 137);"></video>
+              </div>
+            </div>
+
+
+            <div class="columns"> 
+              <div class="column">
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Heavy-Lifting (Baseline)</h3>
+                <video autoplay muted loop playsinline controls preload="auto" src="./static/videos/heavy_lifting_baseline_mask_h264.mp4" width="100%" style="border-radius:10px; border: 5px solid rgb(255, 114, 112);"></video>
+              </div>
+              <div class="column">
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Heavy-Lifting (FALCON)</h3>
+                <video autoplay muted loop playsinline controls preload="auto" src="./static/videos/heavy_lifting_falcon_mask_h264.mp4" width="100%" style="border-radius:10px; border: 5px solid rgb(134, 236, 137);"></video>
+              </div>
+            </div>
+
+
+          </td>
+        </tr>
+      </div> 
+    </div>
+  </div>
+</section>
 
 <section class="section">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Forceful Loco-Manipulation Tasks</h2>
+        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Autonomy</h2>
         <tr>
           <td>
 
             <div class="columns"> <!-- Correct Bulma structure -->
               <div class="column has-text-centered">
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Tote Logistics</h3>
+                <video autoplay muted loop playsinline controls preload="auto" src="./static/videos/autonomy.mov" width="100%" style="border-radius:10px;"></video>
+              </div>
+
+            </div>
+            <br>
+
+          </td>
+        </tr>
+      </div> 
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">More Forceful Loco-Manipulation Tasks</h2>
+        <tr>
+          <td>
+
+            <!-- <div class="columns">
+              <div class="column has-text-centered">
                 <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Door-Opening</h3>
                 <video autoplay muted loop playsinline controls preload="auto" src="./static/videos/door_opening_fieldai_unmask.mp4" width="100%" style="border-radius:10px;"></video>
               </div>
-            </div>
+            </div> -->
 
             <div class="columns"> <!-- Correct Bulma structure -->
               <div class="column">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Cart-Pulling</h3>
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Cart-Pulling (Unitree G1)</h3>
                 <video autoplay muted loop playsinline controls preload="auto" src="./static/videos/g1_cart_pulling_mask_h264.mp4" width="100%" style="border-radius:10px;"></video>
               </div>
               <div class="column">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Cart-Pulling</h3>
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Cart-Pulling (Booster T1)</h3>
                 <video autoplay muted loop playsinline controls preload="auto" src="./static/videos/t1_cart_pulling_praj_mask_h264.mp4" width="100%" style="border-radius:10px;"></video>
               </div>
             </div>
@@ -382,85 +462,6 @@
 </section>
 
 
-
-<section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Autonomy</h2>
-        <tr>
-          <td>
-
-            <div class="columns"> <!-- Correct Bulma structure -->
-              <div class="column has-text-centered">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Tote Logistics</h3>
-                <video autoplay muted loop playsinline controls preload="auto" src="./static/videos/autonomy.mov" width="100%" style="border-radius:10px;"></video>
-              </div>
-
-            </div>
-            <br>
-
-          </td>
-        </tr>
-      </div> 
-    </div>
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Comparisons</h2>
-        <tr>
-          <td>
-
-            <div class="columns">
-              <div class="column">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Door-Opening (Baseline)</h3>
-                <video autoplay muted loop playsinline controls preload="auto" src="./static/videos/g1_door_opening_baseline_h264.mp4" width="100%" style="border-radius:10px; border: 5px solid rgb(255, 114, 112);"></video>
-              </div>
-              <div class="column">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Door-Opening (FALCON)</h3>
-                <video autoplay muted loop playsinline controls preload="auto" src="./static/videos/g1_door_open_falcon_h264.mp4" width="100%" style="border-radius:10px; border: 5px solid rgb(134, 236, 137);"></video>
-              </div>
-            </div>
-            <br>
-
-
-            <div class="columns"> 
-              <div class="column">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Cart-Pulling (Baseline)</h3>
-                <video autoplay muted loop playsinline controls preload="auto" src="./static/videos/t1_cart_pulling_baseline_mask_h264.mp4" width="100%" style="border-radius:10px; border: 5px solid rgb(255, 114, 112);"></video>
-              </div>
-              <div class="column">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Cart-Pulling (FALCON)</h3>
-                <video autoplay muted loop playsinline controls preload="auto" src="./static/videos/t1_cart_pulling_falcon_mask_h264.mp4" width="100%" style="border-radius:10px; border: 5px solid rgb(134, 236, 137);"></video>
-              </div>
-            </div>
-
-
-            <div class="columns"> 
-              <div class="column">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Heavy-Lifting (Baseline)</h3>
-                <video autoplay muted loop playsinline controls preload="auto" src="./static/videos/heavy_lifting_baseline_mask_h264.mp4" width="100%" style="border-radius:10px; border: 5px solid rgb(255, 114, 112);"></video>
-              </div>
-              <div class="column">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Heavy-Lifting (FALCON)</h3>
-                <video autoplay muted loop playsinline controls preload="auto" src="./static/videos/heavy_lifting_falcon_mask_h264.mp4" width="100%" style="border-radius:10px; border: 5px solid rgb(134, 236, 137);"></video>
-              </div>
-            </div>
-
-
-          </td>
-        </tr>
-      </div> 
-    </div>
-  </div>
-</section>
-
-
 <section class="section">
   <div class="container">
     <!-- Abstract. -->
@@ -469,7 +470,7 @@
         <h2 class="title is-2">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Humanoid loco-manipulation holds transformative potential for daily service and industrial tasks, yet achieving precise, robust whole-body control with 3D end-effector force interaction remains a major challenge. Prior approaches are often limited to lightweight tasks or quadrupedal/wheeled platforms. To overcome these limitations, we propose <span class="method" style="color: darkred;">FALCON</span>, a dual-agent reinforcement-learning-based framework for robust force-adaptive humanoid loco-manipulation. <span class="method" style="color: darkred;">FALCON</span> decomposes whole-body control into two specialized agents: (1) a lower-body agent ensuring stable locomotion under external force disturbances, and (2) an upper-body agent tracking precise end-effector positions with implicit force compensation. These two agents are jointly trained in simulation with a force curriculum that progressively escalates the magnitude of external force exerted on the end-effectors respecting joint torque limits. Experiments demonstrate that, compared to the baselines, <span class="method" style="color: darkred;">FALCON</span> achieves 2x more accurate upper-body joint tracking, while maintaining robust locomotion under force disturbances and achieving faster training convergence. Importantly, <span class="method" style="color: darkred;">FALCON</span> enables policy training without embodiment-specific reward or curriculum tuning. Using the same training setup, we obtain policies that deploy on multiple humanoids, enabling real-world forceful loco-manipulation tasks such as transporting payloads (0-20N), cart-pulling (0-100N), and door-opening (0-40N).
+            Humanoid loco-manipulation holds transformative potential for daily service and industrial tasks, yet achieving precise, robust whole-body control with 3D end-effector force interaction remains a major challenge. Prior approaches are often limited to lightweight tasks or quadrupedal/wheeled platforms. To overcome these limitations, we propose <span class="method" style="color: darkred;">FALCON</span>, a dual-agent reinforcement-learning-based framework for robust force-adaptive humanoid loco-manipulation. <span class="method" style="color: darkred;">FALCON</span> decomposes whole-body control into two specialized agents: (1) a lower-body agent ensuring stable locomotion under external force disturbances, and (2) an upper-body agent precisely tracking end-effector positions with implicit adaptive force compensation. These two agents are jointly trained in simulation with a force curriculum that progressively escalates the magnitude of external force exerted on the end effector while respecting torque limits. Experiments demonstrate that, compared to the baselines, <span class="method" style="color: darkred;">FALCON</span> achieves 2$\times$ more accurate upper-body joint tracking, while maintaining robust locomotion under force disturbances and achieving faster training convergence. Moreover, <span class="method" style="color: darkred;">FALCON</span> enables policy training without embodiment-specific reward or curriculum tuning. Using the same training setup, we obtain policies that are deployed across multiple humanoids, enabling forceful loco-manipulation tasks such as transporting payloads (0-20N force), cart-pulling (0-100N), and door-opening (0-40N) in the real world.
           </p>
         </div>
       </div>
