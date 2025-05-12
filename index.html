@@ -63,13 +63,13 @@
 <section class="hero is-link is-fullheight video">
   <div class="hero-video">
     <video playsinline autoplay muted loop>
-      <source src="./static/videos/hero_h264.mp4" type="video/mp4">
+      <source src="./static/videos/hero.mp4" type="video/mp4">
     </video>
   </div>
   <div class="hero-video is-hidden-tablet is-inline-block-mobile"
     style="height: 154.28571428vw; width: 100%; min-width:64.81481481vh;min-height:100%;">
     <video playsinline autoplay muted loop>
-      <source src=" ./static/videos/hero_9_16_h264.mp4" type="video/mp4">
+      <source src=" ./static/videos/hero.mp4" type="video/mp4">
     </video>
   </div>
   <div class="overlay"></div>
@@ -312,27 +312,13 @@
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">
-          Heavy-Duty Loco-Manipulation Tasks
+          Heavy-Duty Loco-Manipulation Tasks via <em>Teleoperation</em>
         </h2>
         <p class="content is-medium" style="text-align: center; padding-bottom: 20px;">
-          We <strong style="color: #e63946; font-weight: 800;">compare</strong> the real-world performance of <span class="method" style="color: darkred;">FALCON</span> with a baseline method that uses RL for low-body locomotion and IK for upper-body manipulation w/o any force curriculum, on the following three tasks: <b>Door-Opening</b>, <b>Cart-Pulling</b>, and <b>Heavy-Lifting</b>.
+          We compare the real-world performance of <strong style="color: #13c253; font-weight: 800;">FALCON</strong> with a <strong style="color: #e63946; font-weight: 800;">baseline</strong> that uses <em>RL for low-body locomotion and IK for upper-body manipulation w/o any force curriculum</em>, on the following three tasks: <b>Door-Opening</b>, <b>Cart-Pulling</b>, and <b>Heavy-Lifting</b>.
         </p>        
         <tr>
           <td>
-
-            <div class="columns">
-              <div class="column">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Door-Opening (Baseline)</h3>
-                <video autoplay muted loop playsinline controls preload="auto" src="./static/videos/g1_door_opening_baseline_unmask.mp4" width="100%" style="border-radius:10px; border: 5px solid rgb(255, 114, 112);"></video>
-              </div>
-              <div class="column">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Door-Opening (FALCON)</h3>
-                <video autoplay muted loop playsinline controls preload="auto" src="./static/videos/g1_door_opening_falcon_unmask.mp4" width="100%" style="border-radius:10px; border: 5px solid rgb(134, 236, 137);"></video>
-              </div>
-            </div>
-            <br>
-
-
             <div class="columns"> 
               <div class="column">
                 <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Cart-Pulling (Baseline)</h3>
@@ -344,6 +330,25 @@
               </div>
             </div>
 
+            <div class="columns">
+              <div class="column" style="text-align: center;">
+                <h3 class="title is-3" style="margin-bottom: 10px; font-size: x-large;">Door-Opening (Baseline)</h3>
+                <video autoplay muted loop playsinline controls preload="auto"
+                      src="./static/videos/g1_door_opening_baseline_unmask.mp4"
+                      width="70%"
+                      style="border-radius:10px; border: 5px solid rgb(255, 114, 112);">
+                </video>
+              </div>
+              <div class="column" style="text-align: center;">
+                <h3 class="title is-3" style="margin-bottom: 10px; font-size: x-large;">Door-Opening (FALCON)</h3>
+                <video autoplay muted loop playsinline controls preload="auto"
+                      src="./static/videos/g1_door_opening_falcon_unmask.mp4"
+                      width="70%"
+                      style="border-radius:10px; border: 5px solid rgb(134, 236, 137);">
+                </video>
+              </div>
+            </div>
+            <br>
 
             <div class="columns"> 
               <div class="column">
@@ -368,13 +373,14 @@
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Autonomy</h2>
+        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">
+          <em>Autonomous</em> Long-Horizon Forceful Loco-Manipulation Task
+        </h2>      
         <tr>
           <td>
 
             <div class="columns"> <!-- Correct Bulma structure -->
               <div class="column has-text-centered">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Tote Logistics</h3>
                 <video autoplay muted loop playsinline controls preload="auto" src="./static/videos/autonomy_unmask.mov" width="100%" style="border-radius:10px;"></video>
               </div>
 
@@ -392,7 +398,9 @@
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">More Forceful Loco-Manipulation Tasks</h2>
+        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">
+          More Forceful Loco-Manipulation Tasks via <em>Teleoperation</em>
+        </h2>
         <tr>
           <td>
 
